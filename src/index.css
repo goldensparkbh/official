@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Golden Spark Dark Luxury Theme */
+    --background: 240 14% 4%;
+    --foreground: 240 6% 96%;
+    --card: 240 10% 6%;
+    --card-foreground: 240 6% 96%;
+    --popover: 240 10% 6%;
+    --popover-foreground: 240 6% 96%;
+    --primary: 43 88% 60%;
+    --primary-foreground: 240 14% 4%;
+    --secondary: 240 6% 12%;
+    --secondary-foreground: 240 6% 96%;
+    --muted: 240 6% 15%;
+    --muted-foreground: 240 4% 65%;
+    --accent: 43 88% 60%;
+    --accent-foreground: 240 14% 4%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 6% 18%;
+    --input: 240 6% 15%;
+    --ring: 43 88% 60%;
+    --radius: 0.5rem;
+    
+    /* Custom Golden Spark Colors */
+    --gold: 43 88% 60%;
+    --gold-dark: 43 70% 45%;
+    --luxury-black: 240 14% 4%;
+    --deep-charcoal: 240 8% 10%;
+    --soft-ivory: 40 33% 97%;
+    
+    --sidebar-background: 240 10% 6%;
+    --sidebar-foreground: 240 6% 96%;
+    --sidebar-primary: 43 88% 60%;
+    --sidebar-primary-foreground: 240 14% 4%;
+    --sidebar-accent: 240 6% 12%;
+    --sidebar-accent-foreground: 240 6% 96%;
+    --sidebar-border: 240 6% 15%;
+    --sidebar-ring: 43 88% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+  }
+  
+  .font-mono {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+@layer components {
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+  
+  .bg-gold {
+    background-color: hsl(var(--gold));
+  }
+  
+  .border-gold {
+    border-color: hsl(var(--gold));
+  }
+  
+  .hairline {
+    @apply bg-border/20;
+  }
+  
+  .grain-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.04;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+  
+  .section-pinned {
+    @apply w-screen h-screen relative overflow-hidden;
+  }
+  
+  .section-flowing {
+    @apply w-screen relative overflow-hidden;
+  }
+  
+  .headline-xl {
+    font-size: clamp(44px, 6vw, 84px);
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+  }
+  
+  .headline-lg {
+    font-size: clamp(34px, 4.2vw, 64px);
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+  }
+  
+  .body-text {
+    font-size: clamp(15px, 1.1vw, 18px);
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  
+  .micro-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  
+  .btn-primary {
+    @apply bg-gold text-[#0B0B0F] px-8 py-4 font-semibold text-sm tracking-wide uppercase transition-all duration-300;
+  }
+  
+  .btn-primary:hover {
+    @apply brightness-110 scale-[1.02];
+  }
+  
+  .btn-secondary {
+    @apply border border-gold text-[#FAF8F2] px-8 py-4 font-semibold text-sm tracking-wide uppercase transition-all duration-300 bg-transparent;
+  }
+  
+  .btn-secondary:hover {
+    @apply bg-gold/10;
+  }
+}
+
+@layer utilities {
+  .will-change-transform {
+    will-change: transform;
+  }
+  
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--luxury-black));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--gold) / 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--gold) / 0.5);
+}
+
+/* Selection */
+::selection {
+  background: hsl(var(--gold) / 0.3);
+  color: hsl(var(--soft-ivory));
+}
