@@ -167,7 +167,7 @@ const HeroSection = () => {
       {/* Left Photo Panel */}
       <div
         ref={photoRef}
-        className="absolute left-0 top-0 w-full lg:w-[52vw] h-full will-change-transform"
+        className="absolute left-0 top-0 w-full lg:w-[52vw] h-full will-change-transform mobile-image-overlay"
       >
         <img
           src="/images/hero-executive.png"
@@ -186,7 +186,7 @@ const HeroSection = () => {
       />
 
       {/* Right Text Area */}
-      <div className="absolute inset-0 lg:left-[58vw] lg:top-[18vh] lg:w-[36vw] flex flex-col justify-center px-6 lg:px-0">
+      <div className="absolute inset-0 z-20 lg:left-[58vw] lg:top-[18vh] lg:w-[36vw] flex flex-col justify-center px-6 pt-24 pb-12 lg:px-0 lg:pt-0 lg:pb-0">
 
         {/* Headline */}
         <div className="mb-8">
@@ -223,13 +223,13 @@ const HeroSection = () => {
         <div ref={ctaRef} className="flex flex-col sm:flex-row gap-4 will-change-transform">
           <button
             onClick={() => scrollToSection('#contact')}
-            className="btn-primary"
+            className="btn-primary w-full sm:w-auto"
           >
             Book a Call
           </button>
           <button
             onClick={() => scrollToSection('#services')}
-            className="btn-secondary"
+            className="btn-secondary w-full sm:w-auto"
           >
             See Services
           </button>

@@ -130,13 +130,12 @@ const AgentsSection = () => {
       id="services"
     >
       {/* Left Text Area */}
-      <div className="absolute inset-0 lg:left-[8vw] lg:top-[22vh] lg:w-[38vw] flex flex-col justify-center px-6 lg:px-0">
+      <div className="absolute inset-0 z-20 lg:left-[8vw] lg:top-[22vh] lg:w-[38vw] flex flex-col justify-center px-6 pt-24 pb-12 lg:px-0 lg:pt-0 lg:pb-0">
         {/* Micro Badge */}
         <div
           ref={badgeRef}
-          className="micro-label text-gold/80 mb-6 will-change-transform"
+          className="hidden"
         >
-          CHAPTER 02 — YOUR AI TEAM
         </div>
 
         {/* Headline */}
@@ -164,7 +163,7 @@ const AgentsSection = () => {
           </p>
           <button
             onClick={() => scrollToSection('#contact')}
-            className="btn-secondary"
+            className="btn-secondary w-full sm:w-auto"
           >
             Explore AI Agents
           </button>
@@ -181,7 +180,7 @@ const AgentsSection = () => {
       {/* Right Photo Panel */}
       <div
         ref={photoRef}
-        className="absolute right-0 top-0 w-full lg:w-[48vw] h-full will-change-transform"
+        className="absolute right-0 top-0 w-full lg:w-[48vw] h-full will-change-transform mobile-image-overlay"
       >
         <img
           src="/images/agents-portrait.jpg"
@@ -202,3 +201,4 @@ const AgentsSection = () => {
 };
 
 export default AgentsSection;
+

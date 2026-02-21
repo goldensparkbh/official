@@ -148,9 +148,6 @@ const ServicesSection = () => {
       <div className="px-6 lg:px-[8vw]">
         {/* Heading */}
         <div ref={headingRef} className="text-center max-w-3xl mx-auto mb-16 lg:mb-20 will-change-transform">
-          <span className="micro-label text-gold/80 mb-4 block">
-            OUR EXPERTISE
-          </span>
           <h2 className="headline-lg text-luxury-ivory mb-6">
             COMPREHENSIVE <span className="text-gold">AI SOLUTIONS</span>
           </h2>

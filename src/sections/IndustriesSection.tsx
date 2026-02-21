@@ -117,9 +117,6 @@ const IndustriesSection = () => {
           ref={headingRef}
           className="text-center max-w-2xl mx-auto mb-16 will-change-transform"
         >
-          <span className="micro-label text-gold/80 mb-4 block">
-            WHO WE SERVE
-          </span>
           <h2 className="headline-lg text-luxury-ivory mb-6">
             INDUSTRIES <span className="text-gold">WE TRANSFORM</span>
           </h2>

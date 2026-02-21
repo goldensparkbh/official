@@ -131,7 +131,7 @@ const WorkflowsSection = () => {
       {/* Left Photo Panel */}
       <div
         ref={photoRef}
-        className="absolute left-0 top-0 w-full lg:w-[52vw] h-full will-change-transform"
+        className="absolute left-0 top-0 w-full lg:w-[52vw] h-full will-change-transform mobile-image-overlay"
       >
         <img
           src="/images/workflows-office.jpg"
@@ -150,13 +150,12 @@ const WorkflowsSection = () => {
       />
 
       {/* Right Text Area */}
-      <div className="absolute inset-0 lg:left-[58vw] lg:top-[22vh] lg:w-[34vw] flex flex-col justify-center px-6 lg:px-0">
+      <div className="absolute inset-0 z-20 lg:left-[58vw] lg:top-[22vh] lg:w-[34vw] flex flex-col justify-center px-6 pt-24 pb-12 lg:px-0 lg:pt-0 lg:pb-0">
         {/* Micro Badge */}
         <div
           ref={badgeRef}
-          className="micro-label text-gold/80 mb-6 will-change-transform"
+          className="hidden"
         >
-          CHAPTER 03 — SYSTEMS THAT FLOW
         </div>
 
         {/* Headline */}
@@ -183,7 +182,7 @@ const WorkflowsSection = () => {
           </p>
           <button
             onClick={() => scrollToSection('#contact')}
-            className="btn-secondary"
+            className="btn-secondary w-full sm:w-auto"
           >
             See Integrations
           </button>
@@ -200,3 +199,4 @@ const WorkflowsSection = () => {
 };
 
 export default WorkflowsSection;
+

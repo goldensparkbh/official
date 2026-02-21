@@ -104,11 +104,22 @@
   }
   
   .section-pinned {
-    @apply w-screen h-screen relative overflow-hidden;
+    position: relative;
+    width: 100%;
+    min-height: 100svh;
+    overflow: hidden;
   }
-  
+
+  @media (min-width: 1024px) {
+    .section-pinned {
+      height: 100vh;
+    }
+  }
+
   .section-flowing {
-    @apply w-screen relative overflow-hidden;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
   }
   
   .headline-xl {
@@ -155,6 +166,32 @@
   
   .btn-secondary:hover {
     @apply bg-gold/10;
+  }
+
+  .mobile-image-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 200ms ease;
+  }
+
+  @media (max-width: 1023px) {
+    .mobile-image-overlay::after {
+      opacity: 1;
+      background: rgba(11, 11, 15, 0.48);
+    }
+
+    .headline-xl {
+      font-size: clamp(32px, 11vw, 44px);
+      line-height: 0.92;
+    }
+
+    .headline-lg {
+      font-size: clamp(26px, 9vw, 40px);
+      line-height: 0.95;
+    }
   }
 }
 

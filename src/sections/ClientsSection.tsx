@@ -5,9 +5,18 @@ import { ENABLE_SCROLL_ANIMATIONS } from '@/config/motion';
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Client logo placeholder component
-const ClientLogo = ({ name, index }: { name: string; index: number }) => {
+interface ClientItem {
+  name: string;
+  logo?: string;
+  alt?: string;
+  smallLogo?: boolean;
+  mediumLogo?: boolean;
+  largeLogo?: boolean;
+}
+
+const ClientLogo = ({ client, index }: { client: ClientItem; index: number }) => {
   const logoRef = useRef<HTMLDivElement>(null);
+  const { name, logo, alt, smallLogo, mediumLogo, largeLogo } = client;
 
   useLayoutEffect(() => {
     if (!ENABLE_SCROLL_ANIMATIONS) return;
@@ -40,18 +49,26 @@ const ClientLogo = ({ name, index }: { name: string; index: number }) => {
   return (
     <div
       ref={logoRef}
-      className="group flex items-center justify-center p-6 lg:p-8 rounded-lg bg-luxury-charcoal/20 border border-border/10 hover:border-gold/20 hover:bg-luxury-charcoal/30 transition-all duration-300 will-change-transform"
+      className="group flex items-center justify-center p-3 lg:p-4 rounded-lg border border-border/10 hover:border-gold/20 transition-all duration-300 will-change-transform"
     >
-      {/* Logo Placeholder - Replace with actual client logos */}
-      <div className="flex flex-col items-center gap-3">
-        <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-lg bg-luxury-ivory/5 flex items-center justify-center group-hover:bg-gold/10 transition-colors duration-300">
-          <span className="font-heading text-2xl lg:text-3xl font-black text-luxury-ivory/30 group-hover:text-gold/50 transition-colors duration-300">
-            {name.charAt(0)}
-          </span>
+      <div className="flex items-center justify-center">
+        <div className="w-24 h-24 lg:w-32 lg:h-32 flex items-center justify-center">
+          {logo ? (
+            <img
+              src={logo}
+              alt={alt ?? name}
+              className={`max-w-full max-h-full object-contain p-0.5 opacity-85 group-hover:opacity-100 transition-opacity duration-300 ${
+                smallLogo
+                  ? 'scale-75 lg:scale-70'
+                  : mediumLogo
+                    ? 'scale-[0.82] lg:scale-[0.78]'
+                    : largeLogo
+                      ? 'scale-110 lg:scale-115'
+                      : ''
+              }`}
+            />
+          ) : null}
         </div>
-        <span className="text-xs text-luxury-ivory/40 font-medium tracking-wide">
-          {name}
-        </span>
       </div>
     </div>
   );
@@ -88,16 +105,38 @@ const ClientsSection = () => {
     return () => ctx.revert();
   }, []);
 
-  // Client names - Replace with actual client names
-  const clients = [
-    'Client One',
-    'Client Two',
-    'Client Three',
-    'Client Four',
-    'Client Five',
-    'Client Six',
-    'Client Seven',
-    'Client Eight',
+  const clients: ClientItem[] = [
+    {
+      name: 'Client One',
+      logo: '/images/clients/client-one-logo.svg',
+      alt: 'Client One logo',
+      mediumLogo: true,
+    },
+    {
+      name: 'Client Two',
+      logo: '/images/clients/client-two-logo.svg',
+      alt: 'Client Two logo',
+      smallLogo: true,
+    },
+    {
+      name: 'Client Three',
+      logo: '/images/clients/client-three-logo.svg',
+      alt: 'University of Technology Bahrain logo',
+      largeLogo: true,
+    },
+    {
+      name: 'Client Four',
+      logo: '/images/clients/client-four-logo.svg',
+      alt: 'Youth City logo',
+    },
+    {
+      name: 'Client Five',
+      logo: '/images/clients/client-five-logo.svg',
+      alt: 'Kingdom University logo',
+    },
+    { name: 'Client Six' },
+    { name: 'Client Seven' },
+    { name: 'Client Eight' },
   ];
 
   return (
@@ -112,9 +151,6 @@ const ClientsSection = () => {
           ref={headingRef}
           className="text-center max-w-2xl mx-auto mb-16 will-change-transform"
         >
-          <span className="micro-label text-gold/80 mb-4 block">
-            TRUSTED BY
-          </span>
           <h2 className="headline-lg text-luxury-ivory mb-6">
             OUR <span className="text-gold">CLIENTS</span>
           </h2>
@@ -125,18 +161,12 @@ const ClientsSection = () => {
         </div>
 
         {/* Clients Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-1 lg:gap-2 max-w-5xl mx-auto">
           {clients.map((client, index) => (
-            <ClientLogo key={client} name={client} index={index} />
+            <ClientLogo key={client.name} client={client} index={index} />
           ))}
         </div>
 
-        {/* Note for adding logos */}
-        <div className="mt-12 text-center">
-          <p className="text-xs text-luxury-ivory/30">
-            * Replace placeholder logos with actual client logos in the code
-          </p>
-        </div>
       </div>
     </section>
   );
