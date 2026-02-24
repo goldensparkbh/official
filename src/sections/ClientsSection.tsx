@@ -12,11 +12,12 @@ interface ClientItem {
   smallLogo?: boolean;
   mediumLogo?: boolean;
   largeLogo?: boolean;
+  xLargeLogo?: boolean;
 }
 
 const ClientLogo = ({ client, index }: { client: ClientItem; index: number }) => {
   const logoRef = useRef<HTMLDivElement>(null);
-  const { name, logo, alt, smallLogo, mediumLogo, largeLogo } = client;
+  const { name, logo, alt, smallLogo, mediumLogo, largeLogo, xLargeLogo } = client;
 
   useLayoutEffect(() => {
     if (!ENABLE_SCROLL_ANIMATIONS) return;
@@ -64,6 +65,8 @@ const ClientLogo = ({ client, index }: { client: ClientItem; index: number }) =>
                     ? 'scale-[0.82] lg:scale-[0.78]'
                     : largeLogo
                       ? 'scale-110 lg:scale-115'
+                      : xLargeLogo
+                        ? 'scale-[1.65] lg:scale-[1.75]'
                       : ''
               }`}
             />
@@ -134,7 +137,12 @@ const ClientsSection = () => {
       logo: '/images/clients/client-five-logo.svg',
       alt: 'Kingdom University logo',
     },
-    { name: 'Client Six' },
+    {
+      name: 'Client Six',
+      logo: '/images/clients/client-six-logo.svg',
+      alt: 'CC WhiteButtons logo',
+      xLargeLogo: true,
+    },
     { name: 'Client Seven' },
     { name: 'Client Eight' },
   ];
