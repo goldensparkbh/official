@@ -282,8 +282,14 @@ const ContactSection = () => {
         <div className="px-6 lg:px-[8vw]">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             {/* Logo */}
-            <div className="font-heading font-black text-xl tracking-tight text-luxury-ivory">
-              GOLDEN <span className="text-gold">SPARK</span>
+            <div className="flex items-center gap-3">
+              <img
+                src="/images/gsc-logo.svg"
+                alt="Golden Spark Consultancy logo"
+                className="h-10 w-auto object-contain"
+                decoding="async"
+              />
+              <span className="sr-only">Golden Spark Consultancy</span>
             </div>
 
             {/* Nav Links */}
@@ -334,7 +340,7 @@ const ContactSection = () => {
           {/* Copyright */}
           <div className="mt-10 pt-8 border-t border-border/10 text-center">
             <p className="text-xs text-luxury-ivory/40">
-              © {new Date().getFullYear()} Golden Spark. All rights reserved.
+              © {new Date().getFullYear()} Golden Spark Consultancy. All rights reserved.
             </p>
           </div>
         </div>

@@ -215,8 +215,8 @@ const HeroSection = () => {
           ref={subheadRef}
           className="body-text text-luxury-ivory/70 max-w-md mb-10 will-change-transform"
         >
-          Golden Spark builds AI agents and automations that handle operations,
-          sales, and support—so you scale without hiring overhead.
+          Golden Spark Consultancy builds AI agents and automations that handle
+          operations, sales, and support—so you scale without hiring overhead.
         </p>
 
         {/* CTAs */}

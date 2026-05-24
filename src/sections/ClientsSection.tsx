@@ -163,8 +163,8 @@ const ClientsSection = () => {
             OUR <span className="text-gold">CLIENTS</span>
           </h2>
           <p className="body-text text-luxury-ivory/70">
-            Leading organizations trust Golden Spark to deliver transformative
-            AI solutions.
+            Leading organizations trust Golden Spark Consultancy to deliver
+            transformative AI solutions.
           </p>
         </div>
 

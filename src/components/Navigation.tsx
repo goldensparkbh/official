@@ -17,6 +17,7 @@ const Navigation = () => {
   const navLinks = [
     { label: 'Services', href: '#services' },
     { label: 'Industries', href: '#industries' },
+    { label: 'Portfolio', href: '#portfolio' },
     { label: 'Clients', href: '#clients' },
     { label: 'Process', href: '#process' },
     { label: 'Contact', href: '#contact' },
@@ -43,13 +44,20 @@ const Navigation = () => {
           {/* Logo */}
           <a
             href="#"
-            className="font-heading font-black text-xl tracking-tight text-luxury-ivory"
+            className="flex items-center gap-3 group"
+            aria-label="Golden Spark Consultancy — back to top"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
           >
-            GOLDEN <span className="text-gold">SPARK</span>
+            <img
+              src="/images/gsc-logo.svg"
+              alt="Golden Spark Consultancy logo"
+              className="h-9 lg:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.04]"
+              decoding="async"
+            />
+            <span className="sr-only">Golden Spark Consultancy</span>
           </a>
 
           {/* Desktop Navigation */}
