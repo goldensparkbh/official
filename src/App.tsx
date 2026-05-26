@@ -11,6 +11,7 @@ import WorkflowsSection from './sections/WorkflowsSection';
 import VoiceSection from './sections/VoiceSection';
 import MetricsSection from './sections/MetricsSection';
 import ServicesSection from './sections/ServicesSection';
+import TrainingSection from './sections/TrainingSection';
 import IndustriesSection from './sections/IndustriesSection';
 import PortfolioSection from './sections/PortfolioSection';
 import ClientsSection from './sections/ClientsSection';
@@ -96,6 +97,7 @@ function App() {
 
         {/* Flowing Sections */}
         <ServicesSection />
+        <TrainingSection />
         <IndustriesSection />
         <PortfolioSection />
         <ClientsSection />

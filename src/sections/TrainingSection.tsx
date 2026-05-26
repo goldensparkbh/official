@@ -3,24 +3,23 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ENABLE_SCROLL_ANIMATIONS } from '@/config/motion';
 import {
-  Globe,
+  Monitor,
   Bot,
   Code2,
-  Palette,
-  Lightbulb,
-  Wrench,
+  Briefcase,
+  Users,
 } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
-interface ServiceCardProps {
+interface TrainingCardProps {
   icon: React.ReactNode;
   title: string;
   description: string;
   index: number;
 }
 
-const ServiceCard = ({ icon, title, description, index }: ServiceCardProps) => {
+const TrainingCard = ({ icon, title, description, index }: TrainingCardProps) => {
   const cardRef = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
@@ -37,7 +36,7 @@ const ServiceCard = ({ icon, title, description, index }: ServiceCardProps) => {
           y: 0,
           opacity: 1,
           duration: 0.8,
-          delay: index * 0.1,
+          delay: index * 0.08,
           ease: 'power2.out',
           scrollTrigger: {
             trigger: card,
@@ -69,7 +68,7 @@ const ServiceCard = ({ icon, title, description, index }: ServiceCardProps) => {
   );
 };
 
-const ServicesSection = () => {
+const TrainingSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const headingRef = useRef<HTMLDivElement>(null);
 
@@ -100,72 +99,66 @@ const ServicesSection = () => {
     return () => ctx.revert();
   }, []);
 
-  const services = [
+  const programs = [
     {
-      icon: <Globe size={28} />,
-      title: 'Digital Platforms',
+      icon: <Monitor size={28} />,
+      title: 'Digital Skills',
       description:
-        'Websites, web applications, and business systems built around your requirements—with a focus on usability and scalability.',
+        'Website management, productivity tools, online operations, and the everyday technical skills teams need to work confidently.',
     },
     {
       icon: <Bot size={28} />,
       title: 'AI & Automation',
       description:
-        'Intelligent tools, chatbots, workflow automation, and document processing to streamline operations and reduce manual effort.',
+        'Hands-on sessions on AI tools, workflow design, prompt engineering, chatbot setup, and automating repetitive business tasks.',
     },
     {
       icon: <Code2 size={28} />,
-      title: 'Software Development',
+      title: 'Web Development',
       description:
-        'Custom frontend and backend development—dashboards, booking systems, e-commerce, and internal business applications.',
+        'Introductory and intermediate courses in application development, frontend and backend basics, and project-based learning.',
     },
     {
-      icon: <Palette size={28} />,
-      title: 'Branding & Creative',
+      icon: <Briefcase size={28} />,
+      title: 'Entrepreneurship',
       description:
-        'Visual identity, logo design, marketing materials, digital content, and professional business profiles.',
+        'Idea validation, business models, digital marketing, customer acquisition, pricing, and operational planning for founders.',
     },
     {
-      icon: <Lightbulb size={28} />,
-      title: 'Consulting & Advisory',
+      icon: <Users size={28} />,
+      title: 'Corporate Workshops',
       description:
-        'Guidance on digital transformation, product planning, market positioning, and technology implementation for startups and SMEs.',
-    },
-    {
-      icon: <Wrench size={28} />,
-      title: 'Support & Maintenance',
-      description:
-        'Ongoing system care—updates, troubleshooting, hosting coordination, and operational assistance for your digital products.',
+        'Tailored upskilling for organizations—department-specific automation, digital transformation awareness, and team enablement.',
     },
   ];
 
   return (
     <section
       ref={sectionRef}
-      className="section-flowing bg-luxury-black z-[60] py-24 lg:py-32"
-      id="services"
+      className="section-flowing bg-luxury-black z-[68] py-24 lg:py-32"
+      id="training"
     >
       <div className="px-6 lg:px-[8vw]">
-        {/* Heading */}
-        <div ref={headingRef} className="text-center max-w-3xl mx-auto mb-16 lg:mb-20 will-change-transform">
+        <div
+          ref={headingRef}
+          className="text-center max-w-3xl mx-auto mb-16 lg:mb-20 will-change-transform"
+        >
           <h2 className="headline-lg text-luxury-ivory mb-6">
-            END-TO-END <span className="text-gold">SOLUTIONS</span>
+            PROFESSIONAL <span className="text-gold">TRAINING</span>
           </h2>
           <p className="body-text text-luxury-ivory/70">
-            From digital platforms and custom software to branding, consulting,
-            and ongoing support—we deliver the full stack of services your
-            project needs.
+            Practical programs that equip individuals, entrepreneurs, and teams
+            with the skills to adopt new technology and grow with confidence.
           </p>
         </div>
 
-        {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
-          {services.map((service, index) => (
-            <ServiceCard
-              key={service.title}
-              icon={service.icon}
-              title={service.title}
-              description={service.description}
+          {programs.map((program, index) => (
+            <TrainingCard
+              key={program.title}
+              icon={program.icon}
+              title={program.title}
+              description={program.description}
               index={index}
             />
           ))}
@@ -175,4 +168,4 @@ const ServicesSection = () => {
   );
 };
 
-export default ServicesSection;
+export default TrainingSection;

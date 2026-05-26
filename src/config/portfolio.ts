@@ -182,14 +182,6 @@ export const portfolioProjects: PortfolioProject[] = [
       'A business automation platform presenting AI agents and automation solutions for improving workflows and digital operations.',
     url: 'https://binaa110.web.app/',
   },
-  {
-    id: '22',
-    title: 'Abaya Boutique',
-    category: 'E-Commerce Boutique',
-    description:
-      'An online boutique platform presenting abaya products through a simple e-commerce style web experience.',
-    url: 'https://abaya-bh.web.app/',
-  },
 ];
 
 /**

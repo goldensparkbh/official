@@ -169,32 +169,32 @@ const VoiceSection = () => {
             ref={(el) => { if (el) headlineRefs.current[0] = el; }}
             className="headline-lg text-luxury-ivory will-change-transform"
           >
-            NEVER MISS
+            SKILLS THAT
           </div>
           <div
             ref={(el) => { if (el) headlineRefs.current[1] = el; }}
             className="headline-lg text-gold will-change-transform"
           >
-            A BOOKING
+            COMPOUND
           </div>
         </div>
 
         {/* Body */}
         <div ref={bodyRef} className="will-change-transform">
           <p className="body-text text-luxury-ivory/70 max-w-md mb-8">
-            Our voice agents answer calls, handle reschedules, and confirm
-            details—politely, accurately, and in your brand tone. You stay
-            focused on the work that matters.
+            Our training programs cover digital skills, development, AI tools,
+            and entrepreneurship—equipping people and teams to adopt new
+            technology with confidence.
           </p>
           <button
-            onClick={() => scrollToSection('#contact')}
+            onClick={() => scrollToSection('#training')}
             className="btn-secondary w-full sm:w-auto"
           >
-            Hear a Demo
+            View Programs
           </button>
         </div>
 
-        {/* Voice Wave Animation */}
+        {/* Decorative accent bars */}
         <div
           ref={waveRef}
           className="hidden lg:flex items-end gap-1 mt-12 h-8 opacity-25"
@@ -221,7 +221,7 @@ const VoiceSection = () => {
       >
         <img
           src="/images/voice-support.jpg"
-          alt="Voice AI support"
+          alt="Professional training and upskilling"
           className="w-full h-full object-cover"
         />
         {/* Gradient overlay */}

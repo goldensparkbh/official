@@ -388,8 +388,8 @@ const PortfolioSection = () => {
             OUR <span className="text-gold">PORTFOLIO</span>
           </h2>
           <p className="body-text text-luxury-ivory/70">
-            A curated selection of platforms, dashboards, and digital products
-            we have designed and shipped. Click any card to visit the live site.
+            Platforms, dashboards, e-commerce, and tools we have designed and
+            shipped. Click any card to visit the live project.
           </p>
         </div>
 

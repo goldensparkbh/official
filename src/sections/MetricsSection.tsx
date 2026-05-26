@@ -189,9 +189,9 @@ const MetricsSection = () => {
   };
 
   const metrics = [
-    { value: '24/7', label: 'AI availability across channels' },
-    { value: '-40%', label: 'Avg. reduction in response time' },
-    { value: '+3.2×', label: 'Typical uplift in lead conversion' },
+    { value: '21+', label: 'Digital products & platforms delivered' },
+    { value: '6', label: 'Core service lines under one roof' },
+    { value: '5', label: 'Professional training tracks available' },
   ];
 
   return (
@@ -235,13 +235,13 @@ const MetricsSection = () => {
             ref={(el) => { if (el) headlineRefs.current[0] = el; }}
             className="headline-lg text-luxury-ivory will-change-transform"
           >
-            RESULTS
+            IMPACT
           </div>
           <div
             ref={(el) => { if (el) headlineRefs.current[1] = el; }}
             className="headline-lg text-gold will-change-transform"
           >
-            THAT SPEAK
+            THAT LASTS
           </div>
         </div>
 

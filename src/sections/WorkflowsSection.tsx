@@ -135,7 +135,7 @@ const WorkflowsSection = () => {
       >
         <img
           src="/images/workflows-office.jpg"
-          alt="Workflow automation"
+          alt="Automation and smart systems"
           className="w-full h-full object-cover"
         />
         {/* Gradient overlay */}
@@ -164,27 +164,28 @@ const WorkflowsSection = () => {
             ref={(el) => { if (el) headlineRefs.current[0] = el; }}
             className="headline-lg text-luxury-ivory will-change-transform"
           >
-            WORKFLOWS
+            SMART
           </div>
           <div
             ref={(el) => { if (el) headlineRefs.current[1] = el; }}
             className="headline-lg text-gold will-change-transform"
           >
-            THAT CONNECT
+            AUTOMATION
           </div>
         </div>
 
         {/* Body */}
         <div ref={bodyRef} className="will-change-transform">
           <p className="body-text text-luxury-ivory/70 max-w-md mb-8">
-            Connect your CRM, calendar, email, and ads into one calm system. We
-            map the logic, remove the busywork, and keep every handoff clean.
+            From AI-powered tools and chatbots to workflow automation and
+            document processing—we help you cut manual work and run smarter
+            operations.
           </p>
           <button
-            onClick={() => scrollToSection('#contact')}
+            onClick={() => scrollToSection('#services')}
             className="btn-secondary w-full sm:w-auto"
           >
-            See Integrations
+            Explore Services
           </button>
         </div>
       </div>

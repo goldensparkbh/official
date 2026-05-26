@@ -144,28 +144,28 @@ const AgentsSection = () => {
             ref={(el) => { if (el) headlineRefs.current[0] = el; }}
             className="headline-lg text-luxury-ivory will-change-transform"
           >
-            MEET YOUR
+            DIGITAL
           </div>
           <div
             ref={(el) => { if (el) headlineRefs.current[1] = el; }}
             className="headline-lg text-gold will-change-transform"
           >
-            NEW TEAM
+            PLATFORMS
           </div>
         </div>
 
         {/* Body */}
         <div ref={bodyRef} className="will-change-transform">
           <p className="body-text text-luxury-ivory/70 max-w-md mb-8">
-            We design AI agents that qualify leads, answer support, and follow
-            up—24/7. They sound like your brand, respect your rules, and improve
-            with feedback.
+            We design and build websites, web applications, and business systems
+            tailored to your needs—focused on usability, performance, and room
+            to grow.
           </p>
           <button
-            onClick={() => scrollToSection('#contact')}
+            onClick={() => scrollToSection('#portfolio')}
             className="btn-secondary w-full sm:w-auto"
           >
-            Explore AI Agents
+            View Our Work
           </button>
         </div>
       </div>
@@ -184,7 +184,7 @@ const AgentsSection = () => {
       >
         <img
           src="/images/agents-portrait.jpg"
-          alt="AI team professional"
+          alt="Digital platform development"
           className="w-full h-full object-cover"
         />
         {/* Gradient overlay */}

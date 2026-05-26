@@ -148,11 +148,11 @@ const ContactSection = () => {
               <div ref={headingRef} className="mb-10 will-change-transform">
                 <h2 className="headline-lg text-luxury-ivory mb-4">
                   READY TO{' '}
-                  <span className="text-gold">DELEGATE THE BUSYWORK?</span>
+                  <span className="text-gold">START YOUR PROJECT?</span>
                 </h2>
                 <p className="body-text text-luxury-ivory/70">
-                  Tell us what you're solving. We'll reply within one business
-                  day with next steps.
+                  Tell us what you are building or learning. We will reply
+                  within one business day with next steps.
                 </p>
               </div>
 
@@ -301,10 +301,16 @@ const ContactSection = () => {
                 Services
               </button>
               <button
-                onClick={() => scrollToSection('#industries')}
+                onClick={() => scrollToSection('#training')}
                 className="text-sm text-luxury-ivory/60 hover:text-gold transition-colors"
               >
-                Industries
+                Training
+              </button>
+              <button
+                onClick={() => scrollToSection('#portfolio')}
+                className="text-sm text-luxury-ivory/60 hover:text-gold transition-colors"
+              >
+                Portfolio
               </button>
               <button
                 onClick={() => scrollToSection('#clients')}

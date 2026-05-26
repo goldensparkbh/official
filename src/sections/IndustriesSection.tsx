@@ -4,11 +4,11 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ENABLE_SCROLL_ANIMATIONS } from '@/config/motion';
 import {
   Building2,
-  Radio,
-  HeartPulse,
+  Rocket,
+  User,
   Landmark,
   GraduationCap,
-  Cpu,
+  Briefcase,
 } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -96,13 +96,13 @@ const IndustriesSection = () => {
     return () => ctx.revert();
   }, []);
 
-  const industries = [
-    { icon: <Building2 size={28} />, title: 'Government' },
-    { icon: <Radio size={28} />, title: 'Telecom' },
-    { icon: <HeartPulse size={28} />, title: 'Healthcare' },
-    { icon: <Landmark size={28} />, title: 'Finance' },
+  const audiences = [
+    { icon: <Building2 size={28} />, title: 'Organizations' },
+    { icon: <Rocket size={28} />, title: 'Startups' },
+    { icon: <Briefcase size={28} />, title: 'SMEs' },
+    { icon: <User size={28} />, title: 'Entrepreneurs' },
+    { icon: <Landmark size={28} />, title: 'Government' },
     { icon: <GraduationCap size={28} />, title: 'Education' },
-    { icon: <Cpu size={28} />, title: 'Smart Cities' },
   ];
 
   return (
@@ -118,21 +118,21 @@ const IndustriesSection = () => {
           className="text-center max-w-2xl mx-auto mb-16 will-change-transform"
         >
           <h2 className="headline-lg text-luxury-ivory mb-6">
-            INDUSTRIES <span className="text-gold">WE TRANSFORM</span>
+            WHO WE <span className="text-gold">SERVE</span>
           </h2>
           <p className="body-text text-luxury-ivory/70">
-            Delivering AI solutions across critical sectors that power economies
-            and communities worldwide.
+            We partner with organizations, startups, and individuals across the
+            region—delivering solutions and training that create lasting value.
           </p>
         </div>
 
-        {/* Industries Grid */}
+        {/* Audiences Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-6 max-w-5xl mx-auto">
-          {industries.map((industry, index) => (
+          {audiences.map((audience, index) => (
             <IndustryCard
-              key={industry.title}
-              icon={industry.icon}
-              title={industry.title}
+              key={audience.title}
+              icon={audience.icon}
+              title={audience.title}
               index={index}
             />
           ))}

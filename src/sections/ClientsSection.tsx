@@ -163,8 +163,8 @@ const ClientsSection = () => {
             OUR <span className="text-gold">CLIENTS</span>
           </h2>
           <p className="body-text text-luxury-ivory/70">
-            Leading organizations trust Golden Spark Consultancy to deliver
-            transformative AI solutions.
+            Trusted partners across the region rely on Golden Spark Consultancy
+            for digital solutions, creative work, and professional training.
           </p>
         </div>
 

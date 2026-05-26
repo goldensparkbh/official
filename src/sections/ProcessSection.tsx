@@ -134,25 +134,25 @@ const ProcessSection = () => {
   const steps = [
     {
       number: 'STEP 01',
-      title: 'Discovery & Map',
+      title: 'Discovery & Planning',
       description:
-        'We audit your workflows, define agent roles, and prioritize the highest-impact automations. This phase sets the foundation for everything that follows.',
+        'We understand your goals, map requirements, and define a clear scope—whether it is a platform, automation project, or training program.',
       image: '/images/process-discovery.jpg',
       icon: <Search size={24} />,
     },
     {
       number: 'STEP 02',
-      title: 'Build & Connect',
+      title: 'Design & Build',
       description:
-        'We configure agents, integrations, and guardrails—with weekly demos and clear milestones. You see progress at every step.',
+        'We develop your solution with regular check-ins and visible milestones—software, branding, integrations, or curriculum, delivered with care.',
       image: '/images/process-build.jpg',
       icon: <Settings size={24} />,
     },
     {
       number: 'STEP 03',
-      title: 'Launch & Optimize',
+      title: 'Launch & Support',
       description:
-        'We go live with monitoring, feedback loops, and continuous refinement. Your system improves over time, automatically.',
+        'We deploy, monitor, and refine—with ongoing maintenance and support so your product or team keeps performing long after go-live.',
       image: '/images/process-launch.png',
       icon: <Rocket size={24} />,
     },
@@ -168,10 +168,11 @@ const ProcessSection = () => {
         {/* Heading */}
         <div ref={headingRef} className="max-w-2xl mb-16 lg:mb-24 will-change-transform">
           <h2 className="headline-lg text-luxury-ivory mb-4">
-            HOW WE BUILD <span className="text-gold">YOUR AI SYSTEM</span>
+            HOW WE <span className="text-gold">DELIVER</span>
           </h2>
           <p className="body-text text-luxury-ivory/70">
-            A simple, senior-led process—designed to ship fast and iterate calmly.
+            A structured, collaborative process—from first conversation to
+            launch and beyond.
           </p>
         </div>
 

@@ -194,19 +194,19 @@ const HeroSection = () => {
             ref={(el) => { if (el) headlineRefs.current[0] = el; }}
             className="headline-xl text-luxury-ivory will-change-transform"
           >
-            AI THAT
+            EMERGING
           </div>
           <div
             ref={(el) => { if (el) headlineRefs.current[1] = el; }}
             className="headline-xl text-luxury-ivory will-change-transform"
           >
-            RUNS YOUR
+            TECH THAT
           </div>
           <div
             ref={(el) => { if (el) headlineRefs.current[2] = el; }}
             className="headline-xl text-gold will-change-transform"
           >
-            BUSINESS
+            DELIVERS
           </div>
         </div>
 
@@ -215,8 +215,9 @@ const HeroSection = () => {
           ref={subheadRef}
           className="body-text text-luxury-ivory/70 max-w-md mb-10 will-change-transform"
         >
-          Golden Spark Consultancy builds AI agents and automations that handle
-          operations, sales, and support—so you scale without hiring overhead.
+          Golden Spark Consultancy helps organizations, entrepreneurs, and
+          individuals turn ideas into practical digital products—combining
+          technology, creativity, and expertise across the region.
         </p>
 
         {/* CTAs */}
