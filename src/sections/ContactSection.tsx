@@ -109,12 +109,36 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const response = await fetch(
+        'https://formsubmit.co/ajax/support@goldenspark.me',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            company: formData.company,
+            message: formData.message,
+            _subject: `New inquiry from ${formData.name}`,
+          }),
+        }
+      );
 
-    setIsSubmitting(false);
-    setSubmitted(true);
-    setFormData({ name: '', email: '', company: '', message: '' });
+      if (!response.ok) {
+        throw new Error('Form submission failed');
+      }
+
+      setSubmitted(true);
+      setFormData({ name: '', email: '', company: '', message: '' });
+    } catch {
+      alert('Something went wrong. Please try again or email us directly.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -244,19 +268,20 @@ const ContactSection = () => {
                   </form>
                 )}
 
-                {/* Contact Info */}
-                <div className="mt-12 pt-8 border-t border-border/20 space-y-4">
-                  <div className="flex items-center gap-3 text-luxury-ivory/70">
-                    <Mail size={18} className="text-gold" />
-                    <span className="text-sm">info@goldenspark.com</span>
+                {!submitted && (
+                  <div className="mt-12 pt-8 border-t border-border/20 space-y-4">
+                    <div className="flex items-center gap-3 text-luxury-ivory/70">
+                      <Mail size={18} className="text-gold" />
+                      <span className="text-sm">support@goldenspark.me</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-luxury-ivory/70">
+                      <MapPin size={18} className="text-gold" />
+                      <span className="text-sm">
+                        Based in Kingdom of Bahrain • Working with teams worldwide
+                      </span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-3 text-luxury-ivory/70">
-                    <MapPin size={18} className="text-gold" />
-                    <span className="text-sm">
-                      Based in Kingdom of Bahrain • Working with teams worldwide
-                    </span>
-                  </div>
-                </div>
+                )}
               </div>
             </div>
 

@@ -5,8 +5,6 @@ import { ENABLE_SCROLL_ANIMATIONS } from '@/config/motion';
 import {
   Globe,
   Bot,
-  Code2,
-  Palette,
   Lightbulb,
   Wrench,
 } from 'lucide-react';
@@ -103,27 +101,15 @@ const ServicesSection = () => {
   const services = [
     {
       icon: <Globe size={28} />,
-      title: 'Digital Platforms',
+      title: 'Digital Platforms & Software',
       description:
-        'Websites, web applications, and business systems built around your requirements—with a focus on usability and scalability.',
+        'Websites, web applications, dashboards, booking systems, e-commerce, and custom business software—built for usability, performance, and scale.',
     },
     {
       icon: <Bot size={28} />,
       title: 'AI & Automation',
       description:
         'Intelligent tools, chatbots, workflow automation, and document processing to streamline operations and reduce manual effort.',
-    },
-    {
-      icon: <Code2 size={28} />,
-      title: 'Software Development',
-      description:
-        'Custom frontend and backend development—dashboards, booking systems, e-commerce, and internal business applications.',
-    },
-    {
-      icon: <Palette size={28} />,
-      title: 'Branding & Creative',
-      description:
-        'Visual identity, logo design, marketing materials, digital content, and professional business profiles.',
     },
     {
       icon: <Lightbulb size={28} />,
@@ -152,9 +138,8 @@ const ServicesSection = () => {
             END-TO-END <span className="text-gold">SOLUTIONS</span>
           </h2>
           <p className="body-text text-luxury-ivory/70">
-            From digital platforms and custom software to branding, consulting,
-            and ongoing support—we deliver the full stack of services your
-            project needs.
+            From custom platforms and software to AI automation, consulting,
+            and ongoing support—we deliver the services your project needs.
           </p>
         </div>
 

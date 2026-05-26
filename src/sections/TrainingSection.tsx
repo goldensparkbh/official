@@ -6,6 +6,7 @@ import {
   Monitor,
   Bot,
   Code2,
+  Cpu,
   Briefcase,
   Users,
 } from 'lucide-react';
@@ -117,6 +118,12 @@ const TrainingSection = () => {
       title: 'Web Development',
       description:
         'Introductory and intermediate courses in application development, frontend and backend basics, and project-based learning.',
+    },
+    {
+      icon: <Cpu size={28} />,
+      title: 'IoT Training',
+      description:
+        'Practical sessions on connected devices, sensor integration, monitoring dashboards, and building real-world IoT solutions.',
     },
     {
       icon: <Briefcase size={28} />,

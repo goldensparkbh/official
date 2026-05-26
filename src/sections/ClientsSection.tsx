@@ -50,7 +50,7 @@ const ClientLogo = ({ client, index }: { client: ClientItem; index: number }) =>
   return (
     <div
       ref={logoRef}
-      className="group flex items-center justify-center p-3 lg:p-4 rounded-lg border border-border/10 hover:border-gold/20 transition-all duration-300 will-change-transform"
+      className="group flex items-center justify-center p-4 lg:p-5 rounded-xl bg-white border border-white/80 shadow-sm hover:border-gold/40 hover:shadow-md transition-all duration-300 will-change-transform"
     >
       <div className="flex items-center justify-center">
         <div className="w-24 h-24 lg:w-32 lg:h-32 flex items-center justify-center">
@@ -58,7 +58,7 @@ const ClientLogo = ({ client, index }: { client: ClientItem; index: number }) =>
             <img
               src={logo}
               alt={alt ?? name}
-              className={`max-w-full max-h-full object-contain p-0.5 opacity-85 group-hover:opacity-100 transition-opacity duration-300 ${
+              className={`max-w-full max-h-full object-contain p-1 opacity-90 group-hover:opacity-100 transition-opacity duration-300 ${
                 smallLogo
                   ? 'scale-75 lg:scale-70'
                   : mediumLogo
@@ -164,12 +164,12 @@ const ClientsSection = () => {
           </h2>
           <p className="body-text text-luxury-ivory/70">
             Trusted partners across the region rely on Golden Spark Consultancy
-            for digital solutions, creative work, and professional training.
+            for digital solutions, software development, and professional training.
           </p>
         </div>
 
         {/* Clients Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-1 lg:gap-2 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 lg:gap-4 max-w-5xl mx-auto">
           {clients.map((client, index) => (
             <ClientLogo key={client.name} client={client} index={index} />
           ))}

@@ -190,8 +190,8 @@ const MetricsSection = () => {
 
   const metrics = [
     { value: '21+', label: 'Digital products & platforms delivered' },
-    { value: '6', label: 'Core service lines under one roof' },
-    { value: '5', label: 'Professional training tracks available' },
+    { value: '4', label: 'Core service lines under one roof' },
+    { value: '6', label: 'Professional training tracks available' },
   ];
 
   return (

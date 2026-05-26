@@ -144,7 +144,7 @@ const ProcessSection = () => {
       number: 'STEP 02',
       title: 'Design & Build',
       description:
-        'We develop your solution with regular check-ins and visible milestones—software, branding, integrations, or curriculum, delivered with care.',
+        'We develop your solution with regular check-ins and visible milestones—software, integrations, or curriculum, delivered with care.',
       image: '/images/process-build.jpg',
       icon: <Settings size={24} />,
     },
