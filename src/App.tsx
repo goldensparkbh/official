@@ -1,4 +1,7 @@
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
+import './projects.css';
+import './learning.css';
+import LearningSection from './sections/LearningSection';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ENABLE_SCROLL_ANIMATIONS } from '@/config/motion';
@@ -19,10 +22,20 @@ import ProcessSection from './sections/ProcessSection';
 import ContactSection from './sections/ContactSection';
 
 gsap.registerPlugin(ScrollTrigger);
+const ProjectsPage = lazy(() => import('./pages/ProjectsPage'));
+const LearningPage = lazy(() => import('./pages/LearningPage'));
 
 function App() {
+  const [route, setRoute] = useState(window.location.hash);
+  const projectPage = route.startsWith('#/projects');
+  const learningPage = route.startsWith('#/learn');
   useEffect(() => {
-    if (!ENABLE_SCROLL_ANIMATIONS) return;
+    const change = () => { setRoute(window.location.hash); window.scrollTo(0, 0); };
+    window.addEventListener('hashchange', change);
+    return () => window.removeEventListener('hashchange', change);
+  }, []);
+  useEffect(() => {
+    if (!ENABLE_SCROLL_ANIMATIONS || projectPage || learningPage) return;
 
     // Wait for all ScrollTriggers to be created
     const timer = setTimeout(() => {
@@ -76,7 +89,7 @@ function App() {
       clearTimeout(timer);
       ScrollTrigger.getAll().forEach((st) => st.kill());
     };
-  }, []);
+  }, [projectPage, learningPage]);
 
   return (
     <div className="relative bg-luxury-black min-h-screen">
@@ -88,6 +101,7 @@ function App() {
 
       {/* Main Content */}
       <main className="relative">
+        {projectPage || learningPage ? <Suspense fallback={<div className="pt-40 px-10 text-gold" role="status">Loading…</div>}>{learningPage ? <LearningPage route={route} /> : <ProjectsPage route={route} />}</Suspense> : <>
         {/* Pinned Sections (z-index stacked) */}
         <HeroSection />
         <AgentsSection />
@@ -98,11 +112,13 @@ function App() {
         {/* Flowing Sections */}
         <ServicesSection />
         <TrainingSection />
+        <LearningSection />
         <IndustriesSection />
         <PortfolioSection />
         <ClientsSection />
         <ProcessSection />
         <ContactSection />
+        </>}
       </main>
     </div>
   );

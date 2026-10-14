@@ -6,7 +6,7 @@ import tseslint from 'typescript-eslint'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
-  globalIgnores(['dist']),
+  globalIgnores(['dist', '.workshops-build', 'output', 'functions/node_modules']),
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
@@ -19,5 +19,10 @@ export default defineConfig([
       ecmaVersion: 2020,
       globals: globals.browser,
     },
+  },
+  {
+    files: ['src/components/ui/**/*.tsx'],
+    // The shared UI library exports component variants and context hooks together.
+    rules: { 'react-refresh/only-export-components': 'off' },
   },
 ])

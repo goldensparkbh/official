@@ -337,6 +337,8 @@ const ContactSection = () => {
               >
                 Portfolio
               </button>
+              <a href="#/projects" className="text-sm text-luxury-ivory/60 hover:text-gold transition-colors">Projects</a>
+              <a href="#/learn/workshops" className="text-sm text-luxury-ivory/60 hover:text-gold transition-colors">Learn</a>
               <button
                 onClick={() => scrollToSection('#clients')}
                 className="text-sm text-luxury-ivory/60 hover:text-gold transition-colors"

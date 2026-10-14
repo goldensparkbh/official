@@ -1,0 +1,26 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function admin() { return request.auth != null && request.auth.token.admin == true; }
+    match /projectGuides/{id} {
+      allow read: if true;
+      allow write: if admin();
+    }
+    match /projectItems/{id} {
+      allow read: if true;
+      allow write: if admin();
+    }
+    match /projectSettings/public {
+      allow read: if true;
+      allow write: if admin() && request.resource.data.keys().hasOnly(['whatsapp'])
+        && request.resource.data.whatsapp is string
+        && (request.resource.data.whatsapp.matches('^[1-9][0-9]{7,14}$')
+          || request.resource.data.whatsapp.matches('^X{4,15}$'));
+    }
+    match /projectOrders/{id} {
+      allow read: if admin() || (request.auth != null && resource.data.owner == request.auth.uid);
+      // Callable functions validate prices, ownership and status transitions.
+      allow write: if false;
+    }
+  }
+}

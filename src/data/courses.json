@@ -1,0 +1,362 @@
+[
+  {
+    "id": "EL-101",
+    "slug": "electronics-fundamentals",
+    "title": "Fundamentals of Electronics",
+    "track": "Electronics",
+    "level": "Beginner",
+    "hours": 4,
+    "description": "A practical introduction to circuits, measurement, resistors, LEDs, and safe low-voltage prototyping.",
+    "outcomes": [
+      "Calculate resistance, current and power with the correct units.",
+      "Build and explain a resistor-limited LED circuit.",
+      "Measure a circuit and diagnose an open connection."
+    ],
+    "prerequisites": "No prior electronics experience. Basic arithmetic and a willingness to record measurements are enough.",
+    "projectIds": [
+      "FS-003",
+      "FS-007",
+      "FS-010"
+    ],
+    "price": null,
+    "active": true,
+    "slideCount": 29,
+    "modules": [
+      "Voltage, current and resistance",
+      "Breadboard connections",
+      "Resistor selection and power",
+      "LED polarity and current limiting",
+      "Series and parallel circuits",
+      "Measurement and fault finding"
+    ],
+    "previewImage": "/images/learning/EL-101-preview.png"
+  },
+  {
+    "id": "EL-102",
+    "slug": "arduino-first-projects",
+    "title": "Arduino: Your First Projects",
+    "track": "Electronics",
+    "level": "Beginner",
+    "hours": 5,
+    "description": "Program inputs and outputs, handle buttons, and build a nonblocking reaction timer with an Arduino UNO R3.",
+    "outcomes": [
+      "Upload and explain a sketch for an UNO R3.",
+      "Read a button reliably and control an LED.",
+      "Build a reaction timer with a clear state model."
+    ],
+    "prerequisites": "Complete EL-101 or demonstrate breadboard use, LED polarity and resistor selection.",
+    "projectIds": [
+      "FS-003",
+      "FS-008",
+      "FS-029"
+    ],
+    "price": null,
+    "active": true,
+    "slideCount": 29,
+    "modules": [
+      "The sketch lifecycle",
+      "Digital outputs and external LEDs",
+      "Buttons with a pull-up",
+      "Debouncing and event detection",
+      "Timing without blocking",
+      "Reaction timer states"
+    ],
+    "previewImage": "/images/learning/EL-102-preview.png"
+  },
+  {
+    "id": "EL-201",
+    "slug": "sensors-measurement",
+    "title": "Sensors & Measurement with ESP32",
+    "track": "Electronics",
+    "level": "Intermediate",
+    "hours": 6,
+    "description": "Connect sensors, interpret ADC readings, calibrate measurements, and build a documented plant-monitor prototype.",
+    "outcomes": [
+      "Check voltage compatibility before connecting a sensor.",
+      "Calibrate a sensor using recorded reference points.",
+      "Separate real measurements from missing or invalid data."
+    ],
+    "prerequisites": "Breadboard competence and basic embedded programming. Complete EL-102 or equivalent.",
+    "projectIds": [
+      "FS-002",
+      "FS-004",
+      "FS-017"
+    ],
+    "price": null,
+    "active": true,
+    "slideCount": 29,
+    "modules": [
+      "The measurement chain",
+      "Analog sampling and ADC limits",
+      "Calibration with two reference points",
+      "I2C wiring and device discovery",
+      "Filtering and invalid readings",
+      "Thresholds and hysteresis"
+    ],
+    "previewImage": "/images/learning/EL-201-preview.png"
+  },
+  {
+    "id": "EL-202",
+    "slug": "robotics-motor-control",
+    "title": "Robotics & Motor Control",
+    "track": "Electronics",
+    "level": "Intermediate",
+    "hours": 6,
+    "description": "Select motor drivers, measure distance safely, and implement a tested obstacle-avoiding rover state machine.",
+    "outcomes": [
+      "Match a driver to the motor’s supply and current requirements.",
+      "Explain PWM control and safe direction changes.",
+      "Test a rover’s stop and sensor-failure behavior."
+    ],
+    "prerequisites": "Complete EL-102 and have experience measuring low-voltage circuits. A supervisor must review moving hardware.",
+    "projectIds": [
+      "FS-001",
+      "FS-005",
+      "FS-016"
+    ],
+    "price": null,
+    "active": true,
+    "slideCount": 29,
+    "modules": [
+      "Motors and power budgeting",
+      "H-bridge direction control",
+      "PWM speed control",
+      "Ultrasonic distance measurement",
+      "Navigation as a state machine",
+      "Rover tests and safe stopping"
+    ],
+    "previewImage": "/images/learning/EL-202-preview.png"
+  },
+  {
+    "id": "EL-301",
+    "slug": "connected-iot-systems",
+    "title": "Connected IoT Systems",
+    "track": "Electronics",
+    "level": "Advanced",
+    "hours": 7,
+    "description": "Design telemetry contracts, secure a local MQTT workflow, and test disconnected-device behavior.",
+    "outcomes": [
+      "Define and validate a device telemetry message.",
+      "Use authenticated MQTT with clear topic permissions.",
+      "Test reconnects, stale readings and duplicate messages."
+    ],
+    "prerequisites": "Complete EL-201. Familiarity with JSON, IP networking and embedded code is required.",
+    "projectIds": [
+      "FS-006",
+      "FS-047",
+      "FS-050"
+    ],
+    "price": null,
+    "active": true,
+    "slideCount": 29,
+    "modules": [
+      "An IoT system boundary",
+      "Telemetry contracts",
+      "MQTT messaging and topics",
+      "Connection security",
+      "Offline buffering and reconnects",
+      "Staleness and operational monitoring"
+    ],
+    "previewImage": "/images/learning/EL-301-preview.png"
+  },
+  {
+    "id": "EL-302",
+    "slug": "embedded-design-reliability",
+    "title": "Embedded Design & Reliability",
+    "track": "Electronics",
+    "level": "Advanced",
+    "hours": 7,
+    "description": "Turn a breadboard prototype into an engineered system with power budgeting, timing analysis and repeatable verification.",
+    "outcomes": [
+      "Build a power and timing budget from documented requirements.",
+      "Define startup, watchdog and fault recovery behavior.",
+      "Create a repeatable verification and handover package."
+    ],
+    "prerequisites": "Complete EL-202 and EL-301 or demonstrate comparable embedded-system experience.",
+    "projectIds": [
+      "FS-001",
+      "FS-004",
+      "FS-050"
+    ],
+    "price": null,
+    "active": true,
+    "slideCount": 29,
+    "modules": [
+      "Requirements and acceptance tests",
+      "Power budgeting and regulators",
+      "Scheduling and timing budgets",
+      "Watchdogs and safe recovery",
+      "Layout, grounding and noise",
+      "Verification and handover"
+    ],
+    "previewImage": "/images/learning/EL-302-preview.png"
+  },
+  {
+    "id": "AI-101",
+    "slug": "ai-essentials",
+    "title": "AI Essentials",
+    "track": "AI & Automation",
+    "level": "Beginner",
+    "hours": 4,
+    "description": "Understand AI capabilities and limits, assess everyday tasks, and verify a useful AI-assisted work product.",
+    "outcomes": [
+      "Distinguish rule-based automation, machine learning and generative AI.",
+      "Choose a suitable task and define a useful result.",
+      "Check factual claims and protect sensitive information."
+    ],
+    "prerequisites": "No coding experience. Familiarity with documents, spreadsheets and a web browser is enough.",
+    "projectIds": [],
+    "price": null,
+    "active": true,
+    "slideCount": 29,
+    "modules": [
+      "Three kinds of automation",
+      "What a language model produces",
+      "A useful task brief",
+      "Verification with a claim ledger",
+      "Privacy and responsible use",
+      "Measuring value and limitations"
+    ],
+    "previewImage": "/images/learning/AI-101-preview.png"
+  },
+  {
+    "id": "AI-102",
+    "slug": "prompting-practical-ai",
+    "title": "Prompting & Practical AI",
+    "track": "AI & Automation",
+    "level": "Beginner",
+    "hours": 5,
+    "description": "Create repeatable prompts for summarization, extraction and drafting, with review rubrics and evidence checks.",
+    "outcomes": [
+      "Build a reusable prompt with explicit boundaries.",
+      "Extract structured data and validate the result.",
+      "Compare prompt versions with a fixed evaluation set."
+    ],
+    "prerequisites": "Complete AI-101 or demonstrate factual verification and safe handling of workshop inputs.",
+    "projectIds": [],
+    "price": null,
+    "active": true,
+    "slideCount": 29,
+    "modules": [
+      "Prompt structure and boundaries",
+      "Examples and output patterns",
+      "Structured extraction",
+      "Summarization and coverage",
+      "Rubrics and prompt comparisons",
+      "A repeatable drafting workflow"
+    ],
+    "previewImage": "/images/learning/AI-102-preview.png"
+  },
+  {
+    "id": "AI-201",
+    "slug": "workflow-automation",
+    "title": "Workflow Automation with AI",
+    "track": "AI & Automation",
+    "level": "Intermediate",
+    "hours": 6,
+    "description": "Build a reviewed support-request workflow in n8n with schema validation, retries and duplicate protection.",
+    "outcomes": [
+      "Define a trigger, data contract and review queue.",
+      "Handle missing fields, duplicate events and service failures.",
+      "Measure workflow quality beyond successful execution."
+    ],
+    "prerequisites": "Complete AI-102. Basic JSON and web-request knowledge. No advanced programming is required.",
+    "projectIds": [],
+    "price": null,
+    "active": true,
+    "slideCount": 29,
+    "modules": [
+      "Workflow boundaries and triggers",
+      "Webhook test and production paths",
+      "Validation and controlled branching",
+      "Duplicate events and idempotency",
+      "Error handling and bounded retries",
+      "Review queues and operational measures"
+    ],
+    "previewImage": "/images/learning/AI-201-preview.png"
+  },
+  {
+    "id": "AI-202",
+    "slug": "grounded-ai-assistants",
+    "title": "Grounded AI Assistants",
+    "track": "AI & Automation",
+    "level": "Intermediate",
+    "hours": 6,
+    "description": "Build a small document-grounded assistant with source citations, permission filtering and answerability tests.",
+    "outcomes": [
+      "Explain retrieval-augmented generation and its limits.",
+      "Prepare a document collection with traceable chunks.",
+      "Evaluate answers for support, permissions and abstention."
+    ],
+    "prerequisites": "Complete AI-102. Familiarity with documents and basic structured data. Programming is optional for the paper prototype.",
+    "projectIds": [],
+    "price": null,
+    "active": true,
+    "slideCount": 29,
+    "modules": [
+      "Retrieval-augmented generation",
+      "Document preparation and metadata",
+      "Retrieval relevance",
+      "Citations and answer support",
+      "Access control and untrusted text",
+      "Answerability and evaluation"
+    ],
+    "previewImage": "/images/learning/AI-202-preview.png"
+  },
+  {
+    "id": "AI-301",
+    "slug": "agents-evaluation",
+    "title": "Agent Workflows & Evaluation",
+    "track": "AI & Automation",
+    "level": "Advanced",
+    "hours": 7,
+    "description": "Design bounded tool-using workflows and evaluate decision quality, approvals, failure handling and resource limits.",
+    "outcomes": [
+      "Design tool contracts and enforce authorization outside the model.",
+      "Build repeatable evaluations with meaningful failure cases.",
+      "Compare a bounded agent against a deterministic baseline."
+    ],
+    "prerequisites": "Complete AI-201 and AI-202. Comfortable with JSON, tool APIs and basic scripting or equivalent workflow logic.",
+    "projectIds": [],
+    "price": null,
+    "active": true,
+    "slideCount": 29,
+    "modules": [
+      "Agent and workflow boundaries",
+      "Tool contracts and argument validation",
+      "Approvals for consequential actions",
+      "Evaluation cases and scoring",
+      "Budgets, retries and stopping rules",
+      "Metrics and failure analysis"
+    ],
+    "previewImage": "/images/learning/AI-301-preview.png"
+  },
+  {
+    "id": "AI-302",
+    "slug": "production-ai-automation",
+    "title": "Production AI & Automation Operations",
+    "track": "AI & Automation",
+    "level": "Advanced",
+    "hours": 7,
+    "description": "Plan an AI service rollout with operational measures, cost budgets, privacy controls, incident response and rollback.",
+    "outcomes": [
+      "Define quality and operational release criteria.",
+      "Estimate cost with retries and review effort included.",
+      "Exercise rollback and incident response with synthetic failures."
+    ],
+    "prerequisites": "Complete AI-301 or demonstrate evaluation, controlled tool use and workflow error handling.",
+    "projectIds": [],
+    "price": null,
+    "active": true,
+    "slideCount": 29,
+    "modules": [
+      "Release criteria and service goals",
+      "Cost budgeting with retries",
+      "Versioning and controlled rollout",
+      "Monitoring and observability",
+      "Incident response and rollback",
+      "Governance and continuous evaluation"
+    ],
+    "previewImage": "/images/learning/AI-302-preview.png"
+  }
+]

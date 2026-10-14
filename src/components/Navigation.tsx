@@ -18,12 +18,21 @@ const Navigation = () => {
     { label: 'Services', href: '#services' },
     { label: 'Training', href: '#training' },
     { label: 'Portfolio', href: '#portfolio' },
+    { label: 'Projects', href: '#/projects' },
+    { label: 'Learn', href: '#/learn/workshops' },
     { label: 'Clients', href: '#clients' },
     { label: 'Process', href: '#process' },
     { label: 'Contact', href: '#contact' },
   ];
 
   const scrollToSection = (href: string) => {
+    setIsMobileMenuOpen(false);
+    if (href.startsWith('#/')) { window.location.assign(href); return; }
+    if (window.location.hash.startsWith('#/')) {
+      window.location.assign(href);
+      setTimeout(() => document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' }), 150);
+      return;
+    }
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -48,6 +57,7 @@ const Navigation = () => {
             aria-label="Golden Spark Consultancy — back to top"
             onClick={(e) => {
               e.preventDefault();
+              if (window.location.hash.startsWith('#/')) window.location.hash = '';
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
           >
@@ -61,7 +71,7 @@ const Navigation = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-10">
+          <div className="hidden lg:flex items-center gap-4 xl:gap-6">
             {navLinks.map((link) => (
               <button
                 key={link.label}
@@ -76,7 +86,7 @@ const Navigation = () => {
           {/* Desktop CTA */}
           <button
             onClick={() => scrollToSection('#contact')}
-            className="hidden lg:block btn-secondary text-xs"
+            className="hidden xl:block btn-secondary text-xs"
           >
             Book a Call
           </button>
@@ -86,6 +96,7 @@ const Navigation = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden text-luxury-ivory p-2"
             aria-label="Toggle menu"
+            aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

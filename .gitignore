@@ -1,1 +1,12 @@
 node_modules
+.env
+.env.local
+.env.*.local
+functions/node_modules
+.workshops-build/
+# Owner deliverables and paid course files must stay out of this public repository.
+output/
+functions/workshops/
+scripts/workshop-curriculum.mjs
+scripts/ai-curriculum.mjs
+scripts/workshop-cases.mjs

@@ -1,0 +1,1404 @@
+{
+  "projects": [
+    {
+      "id": "FS-001",
+      "title": "Obstacle-Avoiding Robot",
+      "ar": "روبوت تجنّب العوائق",
+      "slug": "obstacle-avoiding-robot",
+      "category": "Robotics",
+      "platform": "Arduino",
+      "hours": 3,
+      "difficulty": "Beginner",
+      "description": "Build a curious little robot that senses obstacles and finds its own way.",
+      "descriptionAr": "اصنع روبوتاً صغيراً يستشعر العوائق ويختار طريقه.",
+      "image": "/images/robot-v2.png",
+      "parts": [
+        "Arduino UNO R3",
+        "HC-SR04 ultrasonic sensor",
+        "Motor driver matched to motor current",
+        "2 geared DC motors and chassis",
+        "Regulated low-voltage power source",
+        "Jumper wires"
+      ],
+      "outcomes": [
+        "Read distance measurements",
+        "Control two DC motors",
+        "Create a navigation algorithm"
+      ],
+      "price": null,
+      "status": "Pricing review required"
+    },
+    {
+      "id": "FS-002",
+      "title": "Smart Plant Monitor",
+      "ar": "مراقب النباتات الذكي",
+      "slug": "smart-plant-monitor",
+      "category": "Environment",
+      "platform": "ESP32",
+      "hours": 2,
+      "difficulty": "Beginner",
+      "description": "Give your plants a voice. Explore soil moisture, temperature, and a local Wi-Fi dashboard.",
+      "descriptionAr": "راقب رطوبة التربة ودرجة الحرارة عبر لوحة تحكم محلية.",
+      "image": "/images/plant-v2.png",
+      "parts": [
+        "ESP32 development board",
+        "Capacitive soil moisture sensor",
+        "BME280 sensor",
+        "Breadboard",
+        "Jumper wires",
+        "USB power cable"
+      ],
+      "outcomes": [
+        "Sample analog sensors",
+        "Understand calibration",
+        "Build a local web dashboard"
+      ],
+      "price": null,
+      "status": "Pricing review required"
+    },
+    {
+      "id": "FS-003",
+      "title": "Your First Arduino Lab",
+      "ar": "مختبر أردوينو الأول",
+      "slug": "your-first-arduino-lab",
+      "category": "Fundamentals",
+      "platform": "Arduino",
+      "hours": 1,
+      "difficulty": "Beginner",
+      "description": "Make an LED blink, respond to a button, and turn your first lines of code into something real.",
+      "descriptionAr": "شغّل مصباحاً وتفاعل مع زر وحوّل أول أسطر برمجية إلى تجربة حقيقية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino UNO R3",
+        "Solderless breadboard",
+        "LED",
+        "220 ohm resistor",
+        "Push button",
+        "Jumper wires",
+        "USB data cable"
+      ],
+      "outcomes": [
+        "Understand digital inputs and outputs",
+        "Use a current-limiting resistor",
+        "Upload your first sketch"
+      ],
+      "price": null,
+      "status": "Pricing review required"
+    },
+    {
+      "id": "FS-004",
+      "title": "Desktop Weather Station",
+      "ar": "محطة الطقس المكتبية",
+      "slug": "desktop-weather-station",
+      "category": "Sensors",
+      "platform": "ESP32",
+      "hours": 2,
+      "difficulty": "Beginner",
+      "description": "Turn live temperature, humidity, and pressure readings into a compact desktop display.",
+      "descriptionAr": "اعرض درجة الحرارة والرطوبة والضغط على شاشة مكتبية صغيرة.",
+      "image": "/images/weather-v2.png",
+      "parts": [
+        "ESP32 development board",
+        "BME280 sensor",
+        "I2C OLED display",
+        "Breadboard",
+        "Jumper wires",
+        "USB power cable"
+      ],
+      "outcomes": [
+        "Read an I2C sensor",
+        "Display live measurements",
+        "Understand sensor accuracy"
+      ],
+      "price": null,
+      "status": "Pricing review required"
+    },
+    {
+      "id": "FS-005",
+      "title": "Bluetooth Rover",
+      "ar": "عربة بلوتوث",
+      "slug": "bluetooth-rover",
+      "category": "Robotics",
+      "platform": "Arduino",
+      "hours": 4,
+      "difficulty": "Intermediate",
+      "description": "Explore wireless commands and motor control with a tabletop rover.",
+      "descriptionAr": "استكشف الأوامر اللاسلكية والتحكم بالمحركات.",
+      "image": "/images/robot.webp",
+      "parts": [
+        "Arduino UNO R3",
+        "Bluetooth module with level shifting",
+        "Motor driver",
+        "2 motor chassis",
+        "Regulated power supply",
+        "Jumper wires"
+      ],
+      "outcomes": [
+        "Parse wireless commands",
+        "Control motor speed",
+        "Handle connection loss"
+      ],
+      "price": null,
+      "status": "Pricing review required"
+    },
+    {
+      "id": "FS-006",
+      "title": "Mini Greenhouse Dashboard",
+      "ar": "لوحة البيت الزراعي المصغّر",
+      "slug": "mini-greenhouse-dashboard",
+      "category": "IoT & Wireless",
+      "platform": "ESP32",
+      "hours": 3,
+      "difficulty": "Beginner",
+      "description": "Bring environmental readings together in your own local network dashboard.",
+      "descriptionAr": "اجمع قراءات البيئة في لوحة تحكم على شبكتك المحلية.",
+      "image": "/images/plant-v2.png",
+      "parts": [
+        "ESP32 development board",
+        "BME280 sensor",
+        "Capacitive moisture sensor",
+        "USB power supply",
+        "Breadboard",
+        "Jumper wires"
+      ],
+      "outcomes": [
+        "Combine multiple sensors",
+        "Serve local web pages",
+        "Set display thresholds"
+      ],
+      "price": null,
+      "status": "Pricing review required"
+    },
+    {
+      "id": "FS-007",
+      "title": "LED Traffic Light",
+      "ar": "إشارات المرور",
+      "slug": "led-traffic-light",
+      "category": "Fundamentals",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore led traffic light through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع إشارات المرور من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "LEDs",
+        "330 ohm resistors",
+        "Breadboard",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-008",
+      "title": "Reaction Timer",
+      "ar": "مؤقت سرعة الاستجابة",
+      "slug": "reaction-timer",
+      "category": "Fundamentals",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore reaction timer through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع مؤقت سرعة الاستجابة من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "Push buttons",
+        "LED",
+        "Resistor",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-009",
+      "title": "Digital Dice",
+      "ar": "النرد الرقمي",
+      "slug": "digital-dice",
+      "category": "Displays",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore digital dice through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع النرد الرقمي من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "LEDs",
+        "Resistors",
+        "Push button",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-010",
+      "title": "Light Level Meter",
+      "ar": "مقياس الإضاءة",
+      "slug": "light-level-meter",
+      "category": "Sensors",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore light level meter through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع مقياس الإضاءة من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "Photoresistor",
+        "10k resistor",
+        "OLED display",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-011",
+      "title": "Temperature Logger",
+      "ar": "مسجل الحرارة",
+      "slug": "temperature-logger",
+      "category": "Sensors",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore temperature logger through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع مسجل الحرارة من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "Temperature sensor",
+        "MicroSD module",
+        "MicroSD card",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-012",
+      "title": "Ultrasonic Ruler",
+      "ar": "المسطرة فوق الصوتية",
+      "slug": "ultrasonic-ruler",
+      "category": "Sensors",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore ultrasonic ruler through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع المسطرة فوق الصوتية من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "HC-SR04",
+        "OLED display",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-013",
+      "title": "Mini Piano",
+      "ar": "البيانو المصغّر",
+      "slug": "mini-piano",
+      "category": "Fundamentals",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore mini piano through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع البيانو المصغّر من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "Passive buzzer",
+        "Push buttons",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-014",
+      "title": "RGB Mood Lamp",
+      "ar": "مصباح الألوان",
+      "slug": "rgb-mood-lamp",
+      "category": "Displays",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore rgb mood lamp through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع مصباح الألوان من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "RGB LED",
+        "Resistors",
+        "Potentiometer",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-015",
+      "title": "Servo Pointer",
+      "ar": "مؤشر السيرفو",
+      "slug": "servo-pointer",
+      "category": "Robotics",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore servo pointer through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع مؤشر السيرفو من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/robot.webp",
+      "parts": [
+        "Arduino development board",
+        "Micro servo",
+        "Potentiometer",
+        "Regulated supply",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-016",
+      "title": "Line-Following Robot",
+      "ar": "روبوت تتبع الخط",
+      "slug": "line-following-robot",
+      "category": "Robotics",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore line-following robot through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع روبوت تتبع الخط من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/robot.webp",
+      "parts": [
+        "Arduino development board",
+        "IR reflectance sensors",
+        "Motor driver",
+        "2 motor chassis",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-017",
+      "title": "RFID Learning Station",
+      "ar": "مختبر RFID",
+      "slug": "rfid-learning-station",
+      "category": "IoT & Wireless",
+      "platform": "ESP32",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore rfid learning station through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع مختبر RFID من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "ESP32 development board",
+        "MFRC522 module",
+        "RFID tags",
+        "OLED",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-018",
+      "title": "Bluetooth Message Display",
+      "ar": "شاشة رسائل البلوتوث",
+      "slug": "bluetooth-message-display",
+      "category": "IoT & Wireless",
+      "platform": "ESP32",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore bluetooth message display through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع شاشة رسائل البلوتوث من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "ESP32 development board",
+        "OLED display",
+        "Breadboard",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-019",
+      "title": "Wi-Fi Clock",
+      "ar": "ساعة واي فاي",
+      "slug": "wi-fi-clock",
+      "category": "Displays",
+      "platform": "ESP32",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore wi-fi clock through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع ساعة واي فاي من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "ESP32 development board",
+        "OLED display",
+        "Breadboard",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-020",
+      "title": "Local Sensor Web Server",
+      "ar": "خادم الحساسات المحلي",
+      "slug": "local-sensor-web-server",
+      "category": "IoT & Wireless",
+      "platform": "ESP32",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore local sensor web server through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع خادم الحساسات المحلي من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "ESP32 development board",
+        "BME280",
+        "Breadboard",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-021",
+      "title": "Water Level Demonstrator",
+      "ar": "نموذج قياس مستوى الماء",
+      "slug": "water-level-demonstrator",
+      "category": "Sensors",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore water level demonstrator through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع نموذج قياس مستوى الماء من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "Water level sensor",
+        "LEDs",
+        "Resistors",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-022",
+      "title": "Rain Sensor Display",
+      "ar": "شاشة استشعار المطر",
+      "slug": "rain-sensor-display",
+      "category": "Environment",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore rain sensor display through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع شاشة استشعار المطر من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/environment.webp",
+      "parts": [
+        "Arduino development board",
+        "Rain sensor module",
+        "OLED",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-023",
+      "title": "Room Comfort Monitor",
+      "ar": "مراقب راحة الغرفة",
+      "slug": "room-comfort-monitor",
+      "category": "Environment",
+      "platform": "ESP32",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore room comfort monitor through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع مراقب راحة الغرفة من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/environment.webp",
+      "parts": [
+        "ESP32 development board",
+        "BME280",
+        "OLED",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-024",
+      "title": "Soil Moisture Logger",
+      "ar": "مسجل رطوبة التربة",
+      "slug": "soil-moisture-logger",
+      "category": "Environment",
+      "platform": "ESP32",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore soil moisture logger through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع مسجل رطوبة التربة من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/environment.webp",
+      "parts": [
+        "ESP32 development board",
+        "Capacitive moisture sensor",
+        "MicroSD module",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-025",
+      "title": "Sunlight Tracker",
+      "ar": "متتبع ضوء الشمس",
+      "slug": "sunlight-tracker",
+      "category": "Energy",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore sunlight tracker through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع متتبع ضوء الشمس من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "Photoresistors",
+        "Micro servo",
+        "Resistors",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-026",
+      "title": "Solar Panel Meter",
+      "ar": "مقياس اللوح الشمسي",
+      "slug": "solar-panel-meter",
+      "category": "Energy",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore solar panel meter through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع مقياس اللوح الشمسي من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "Small low-voltage solar panel",
+        "INA219 module",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-027",
+      "title": "USB Power Monitor",
+      "ar": "مراقب طاقة USB",
+      "slug": "usb-power-monitor",
+      "category": "Energy",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore usb power monitor through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع مراقب طاقة USB من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "INA219 module",
+        "USB breakout",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-028",
+      "title": "Mini Wind Experiment",
+      "ar": "تجربة طاقة الرياح",
+      "slug": "mini-wind-experiment",
+      "category": "Energy",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore mini wind experiment through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع تجربة طاقة الرياح من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "Small DC generator",
+        "Protected propeller",
+        "Voltage divider",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-029",
+      "title": "Button Counter",
+      "ar": "عداد الضغطات",
+      "slug": "button-counter",
+      "category": "Fundamentals",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore button counter through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع عداد الضغطات من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "Push button",
+        "OLED",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-030",
+      "title": "Rotary Encoder Menu",
+      "ar": "قائمة المشفر الدوار",
+      "slug": "rotary-encoder-menu",
+      "category": "Displays",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore rotary encoder menu through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع قائمة المشفر الدوار من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "Rotary encoder",
+        "OLED",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-031",
+      "title": "LED Matrix Messages",
+      "ar": "رسائل مصفوفة LED",
+      "slug": "led-matrix-messages",
+      "category": "Displays",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore led matrix messages through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع رسائل مصفوفة LED من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "MAX7219 matrix",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-032",
+      "title": "Seven-Segment Clock",
+      "ar": "ساعة الأرقام الضوئية",
+      "slug": "seven-segment-clock",
+      "category": "Displays",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore seven-segment clock through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع ساعة الأرقام الضوئية من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "TM1637 display",
+        "RTC module",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-033",
+      "title": "Parking Distance Demo",
+      "ar": "نموذج مسافة الركن",
+      "slug": "parking-distance-demo",
+      "category": "Sensors",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore parking distance demo through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع نموذج مسافة الركن من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "HC-SR04",
+        "Buzzer",
+        "LEDs",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-034",
+      "title": "Sound Level Visualizer",
+      "ar": "مؤشر الصوت",
+      "slug": "sound-level-visualizer",
+      "category": "Sensors",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore sound level visualizer through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع مؤشر الصوت من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "Microphone envelope module",
+        "LED bar",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-035",
+      "title": "Tilt Indicator",
+      "ar": "مؤشر الميل",
+      "slug": "tilt-indicator",
+      "category": "Sensors",
+      "platform": "ESP32",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore tilt indicator through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع مؤشر الميل من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "ESP32 development board",
+        "MPU6050",
+        "OLED",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-036",
+      "title": "Magnetic Field Explorer",
+      "ar": "مستكشف المجال المغناطيسي",
+      "slug": "magnetic-field-explorer",
+      "category": "Sensors",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore magnetic field explorer through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع مستكشف المجال المغناطيسي من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "Hall effect sensor",
+        "OLED",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-037",
+      "title": "Stepper Motor Explorer",
+      "ar": "مختبر المحرك الخطوي",
+      "slug": "stepper-motor-explorer",
+      "category": "Robotics",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore stepper motor explorer through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع مختبر المحرك الخطوي من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/robot.webp",
+      "parts": [
+        "Arduino development board",
+        "28BYJ-48 motor",
+        "ULN2003 board",
+        "Regulated supply",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-038",
+      "title": "Joystick Servo Rig",
+      "ar": "منصة تحكم السيرفو",
+      "slug": "joystick-servo-rig",
+      "category": "Robotics",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore joystick servo rig through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع منصة تحكم السيرفو من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/robot.webp",
+      "parts": [
+        "Arduino development board",
+        "Joystick",
+        "Micro servos",
+        "Regulated supply",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-039",
+      "title": "Pi Weather Dashboard",
+      "ar": "لوحة طقس باي",
+      "slug": "pi-weather-dashboard",
+      "category": "Raspberry Pi",
+      "platform": "Raspberry Pi",
+      "difficulty": "Intermediate",
+      "hours": 2,
+      "description": "Explore pi weather dashboard through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع لوحة طقس باي من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Raspberry Pi development board",
+        "BME280",
+        "MicroSD card",
+        "Approved power supply",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-040",
+      "title": "Pi Digital Noticeboard",
+      "ar": "لوحة الإعلانات الرقمية",
+      "slug": "pi-digital-noticeboard",
+      "category": "Raspberry Pi",
+      "platform": "Raspberry Pi",
+      "difficulty": "Intermediate",
+      "hours": 2,
+      "description": "Explore pi digital noticeboard through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع لوحة الإعلانات الرقمية من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Raspberry Pi development board",
+        "HDMI display",
+        "MicroSD card",
+        "Approved power supply",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-041",
+      "title": "Pi Retro Button Console",
+      "ar": "وحدة أزرار باي",
+      "slug": "pi-retro-button-console",
+      "category": "Raspberry Pi",
+      "platform": "Raspberry Pi",
+      "difficulty": "Intermediate",
+      "hours": 2,
+      "description": "Explore pi retro button console through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع وحدة أزرار باي من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Raspberry Pi development board",
+        "Push buttons",
+        "MicroSD card",
+        "Approved power supply",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-042",
+      "title": "Pi Local File Server",
+      "ar": "خادم ملفات باي المحلي",
+      "slug": "pi-local-file-server",
+      "category": "Raspberry Pi",
+      "platform": "Raspberry Pi",
+      "difficulty": "Intermediate",
+      "hours": 2,
+      "description": "Explore pi local file server through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع خادم ملفات باي المحلي من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Raspberry Pi development board",
+        "MicroSD card",
+        "USB storage",
+        "Approved power supply",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-043",
+      "title": "Pi Network Status Display",
+      "ar": "شاشة حالة الشبكة",
+      "slug": "pi-network-status-display",
+      "category": "Raspberry Pi",
+      "platform": "Raspberry Pi",
+      "difficulty": "Intermediate",
+      "hours": 2,
+      "description": "Explore pi network status display through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع شاشة حالة الشبكة من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Raspberry Pi development board",
+        "OLED",
+        "MicroSD card",
+        "Approved power supply",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-044",
+      "title": "Micro:bit Reaction Game",
+      "ar": "لعبة سرعة الاستجابة",
+      "slug": "micro-bit-reaction-game",
+      "category": "Fundamentals",
+      "platform": "micro:bit",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore micro:bit reaction game through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع لعبة سرعة الاستجابة من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "micro:bit development board",
+        "USB data cable",
+        "Battery holder",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-045",
+      "title": "Micro:bit Compass",
+      "ar": "بوصلة مايكروبت",
+      "slug": "micro-bit-compass",
+      "category": "Sensors",
+      "platform": "micro:bit",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore micro:bit compass through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع بوصلة مايكروبت من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "micro:bit development board",
+        "USB data cable",
+        "Battery holder",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-046",
+      "title": "Micro:bit Step Explorer",
+      "ar": "تجربة الخطوات",
+      "slug": "micro-bit-step-explorer",
+      "category": "Sensors",
+      "platform": "micro:bit",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore micro:bit step explorer through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع تجربة الخطوات من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "micro:bit development board",
+        "USB data cable",
+        "Battery holder",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-047",
+      "title": "Wireless Sensor Pair",
+      "ar": "زوج الحساسات اللاسلكي",
+      "slug": "wireless-sensor-pair",
+      "category": "IoT & Wireless",
+      "platform": "ESP32",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore wireless sensor pair through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع زوج الحساسات اللاسلكي من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "ESP32 development board",
+        "Second ESP32",
+        "BME280",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-048",
+      "title": "Desk Occupancy Demo",
+      "ar": "نموذج إشغال المكتب",
+      "slug": "desk-occupancy-demo",
+      "category": "Sensors",
+      "platform": "ESP32",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore desk occupancy demo through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع نموذج إشغال المكتب من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "ESP32 development board",
+        "PIR sensor",
+        "LED",
+        "Resistor",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-049",
+      "title": "Study Session Timer",
+      "ar": "مؤقت الدراسة",
+      "slug": "study-session-timer",
+      "category": "Displays",
+      "platform": "Arduino",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore study session timer through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع مؤقت الدراسة من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "Arduino development board",
+        "OLED",
+        "Buttons",
+        "Buzzer",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    },
+    {
+      "id": "FS-050",
+      "title": "Low-Voltage Model Home",
+      "ar": "نموذج المنزل منخفض الجهد",
+      "slug": "low-voltage-model-home",
+      "category": "IoT & Wireless",
+      "platform": "ESP32",
+      "difficulty": "Beginner",
+      "hours": 2,
+      "description": "Explore low-voltage model home through hands-on electronics and programming.",
+      "descriptionAr": "استكشف مشروع نموذج المنزل منخفض الجهد من خلال الإلكترونيات والبرمجة العملية.",
+      "image": "/images/kit.webp",
+      "parts": [
+        "ESP32 development board",
+        "LEDs",
+        "Resistors",
+        "Push buttons",
+        "Breadboard",
+        "Jumper wires",
+        "Project box and printed guide"
+      ],
+      "outcomes": [
+        "Read and understand component specifications",
+        "Connect inputs and outputs",
+        "Test and explain your program"
+      ],
+      "price": null,
+      "status": "Research draft"
+    }
+  ],
+  "addons": [
+    {
+      "id": "multimeter",
+      "title": "Digital multimeter",
+      "ar": "جهاز قياس متعدد",
+      "description": "Measure voltage, resistance, and continuity."
+    },
+    {
+      "id": "solder",
+      "title": "Soldering essentials",
+      "ar": "أدوات اللحام",
+      "description": "Soldering iron, stand, solder wire, and safety glasses."
+    },
+    {
+      "id": "hand-tools",
+      "title": "Maker tool set",
+      "ar": "مجموعة أدوات الصانع",
+      "description": "Wire stripper, side cutter, and precision screwdrivers."
+    }
+  ]
+}
