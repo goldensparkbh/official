@@ -10,9 +10,12 @@ export const statuses = ['awaiting_confirmation', 'awaiting_payment', 'paid', 'i
 export const variantLabel = (v: Variant) => v === 'assembled' ? 'Assembled project' : v === 'kit' ? 'Unassembled kit' : v === 'workshop' ? 'Workshop PDF package' : 'Additional component';
 export const money = (value: number | null) => value === null ? 'Price on request' : `BHD ${value.toFixed(3)}`;
 export const partId = (name: string) => `part-${encodeURIComponent(name.toLowerCase().trim()).replaceAll('%', '_')}`;
+// Set to false to republish the original project collection after prices are revised.
+export const projectPricingReview = true;
+const importedProjectIds = new Set(source.projects.map(project => project.id));
 const componentNames = [...new Set(source.projects.flatMap(p => p.parts))];
 export const initialItems: Item[] = [
-  ...source.projects.map(p => ({ id: p.id, title: p.title, description: p.description, price: null, assembledPrice: null, active: true, image: '/images/projects/Sparkbox001.jpeg', kitImage: '/images/projects/Sparkbox002.jpeg', assembledImage: '/images/projects/Sparkbox003.jpeg', projectImage: p.image.replace('/images/', '/images/projects/'), kind: 'project' as const, category: p.category, platform: p.platform, difficulty: p.difficulty, hours: p.hours, outcomes: p.outcomes, parts: p.parts, related: p.parts.map(partId) })),
+  ...source.projects.map(p => ({ id: p.id, title: p.title, description: p.description, price: null, assembledPrice: null, active: !projectPricingReview, image: '/images/projects/Sparkbox001.jpeg', kitImage: '/images/projects/Sparkbox002.jpeg', assembledImage: '/images/projects/Sparkbox003.jpeg', projectImage: p.image.replace('/images/', '/images/projects/'), kind: 'project' as const, category: p.category, platform: p.platform, difficulty: p.difficulty, hours: p.hours, outcomes: p.outcomes, parts: p.parts, related: p.parts.map(partId) })),
   ...componentNames.map(name => ({ id: partId(name), title: name, description: `Additional ${name.toLowerCase()} for your project. Compatibility will be confirmed with Golden Spark.`, price: null, assembledPrice: null, active: true, image: '', kind: 'component' as const, category: 'Components', platform: '', parts: [], related: [] })),
   ...source.addons.map(a => ({ id: a.id, title: a.title, description: a.description, price: null, assembledPrice: null, active: true, image: '', kind: 'component' as const, category: 'Tools', platform: '', parts: [], related: [] })),
   ...courses.map(c => ({ id:c.id, title:c.title, description:c.description, price:null, assembledPrice:null, active:true, image:c.previewImage, kind:'course' as const, category:c.track, platform:c.level, hours:c.hours, outcomes:c.outcomes, parts:[], related:c.projectIds })),
@@ -20,7 +23,7 @@ export const initialItems: Item[] = [
 export const priceFor = (item: Item, variant: Variant) => variant === 'assembled' ? item.assembledPrice : item.price;
 export function mergeItems(remote: Item[]): Item[] {
   const merged = new Map(initialItems.map(item => [item.id, item]));
-  remote.forEach(item => merged.set(item.id, item));
+  remote.forEach(item => merged.set(item.id, projectPricingReview && importedProjectIds.has(item.id) && item.kind === 'project' ? { ...item, active: false } : item));
   return [...merged.values()];
 }
 export function whatsappMessage(order: Order) {
